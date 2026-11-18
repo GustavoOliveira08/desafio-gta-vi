@@ -1,9 +1,6 @@
 package com.dt2.gtavi.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Missao {
@@ -13,6 +10,7 @@ public class Missao {
     private String nome;
     private String local;
     private String dificuldade;
+    @Column(columnDefinition = "TEXT")
     private String imagem;
     private String descricao;
 
